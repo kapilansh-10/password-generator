@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useState, useRef } from "react"
 import "./App.css"
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
 
+  <Analytics />
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false);
   const [charactersAllowed, setCharactersAllowed] = useState(false);
